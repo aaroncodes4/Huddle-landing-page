@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(257, 40%, 49%) url(/images/bg-desktop.svg) no-repeat center center fixed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    max-width: 1320px;
+    color: #fff;
+    position: relative;
+}
+
+.top {
+    margin-bottom: 3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 2.5rem;
+    align-items: center;
+}
+
+.right-sec h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.right-sec p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.fa-brands:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.btn {
+    background: #fff;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    padding: 1rem 5rem;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10rem;
+}
+
+.btn:hover {
+    background: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background: hsl(257, 40%, 49%) url(/images/bg-mobile.svg) no-repeat top;
+        display: grid;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 1rem 1.5rem;
+        position: relative;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
+    }
+
+    .top {
+        margin-bottom: 2.2rem ;
+    }
+    .top img {
+        width: 10rem;
+    }
+
+    .container img {
+        width: 100%;
+    }
+    .right-sec {
+        text-align: center;
+    }
+    .right-sec h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .right-sec p {
+        font-size: 1.03rem;
+        font-weight: 400;
+    }
+
+    .btn {
+        padding: 1rem 5rem;
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        position: absolute;
+        left: 36%;
+        font-size: 1.6rem;
+    }
+}
